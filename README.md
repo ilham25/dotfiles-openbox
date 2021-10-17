@@ -257,7 +257,7 @@ Change the configuration below
 
 ## :heart: Credits
 
-- [openbox Wiki](https://i3wm.org/docs/userguide.html)
+- [openbox Wiki](http://openbox.org/wiki/Help:Contents)
 - [@owl4ce](https://github.com/owl4ce/)
 - [@nwg-piotr - psuinfo](https://github.com/nwg-piotr)
 - [@firecat53 - networkmanager-dmenu](https://github.com/firecat53)
