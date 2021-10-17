@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
     <menu id="apps-accessories-menu" label="Accessories">
+        <separator label="Accessories" />
         <item label="Character Map">
             <action name="Execute">
                 <command>gucharmap</command>
@@ -11,6 +12,7 @@
         </item>
     </menu>
     <menu id="apps-editors-menu" label="Editors">
+        <separator label="Editors" />
         <item label="Visual Studio Code">
             <action name="Execute">
                 <command>code</command>
@@ -31,13 +33,20 @@
         </item>
     </menu>
     <menu id="apps-term-menu" label="Terminals">
+        <separator label="Terminals" />
         <item label="Rxvt Unicode">
             <action name="Execute">
                 <command>urxvt</command>
             </action>
         </item>
+        <item label="Kitty">
+            <action name="Execute">
+                <command>kitty</command>
+            </action>
+        </item>
     </menu>
     <menu id="apps-net-menu" label="Internet">
+        <separator label="Internet" />
         <item label="Firefox">
             <action name="Execute">
                 <command>firefox</command>
@@ -57,7 +66,8 @@
             </action>
         </item>
     </menu>
-    <menu id="apps-fileman-menu" label="File Managers">
+    <menu id="apps-fileman-menu" label="File Manager">
+        <separator label="File Manager" />
         <item label="Thunar">
             <action name="Execute">
                 <command>Thunar</command>
@@ -68,6 +78,7 @@
         </item>
     </menu>
     <menu id="scripts-menu" label="Scripts">
+        <separator label="Scripts" />
         <item label="Power Menu">
             <action name="Execute">
                 <command>bash -c '~/.config/rofi/scripts/powermenu.sh'</command>
@@ -94,6 +105,7 @@
         </item>
     </menu>
     <menu id="scripts-theme-menu" label="Change Theme">
+        <separator label="Change Theme" />
         <item label="Dark Mode">
             <action name="Execute">
                 <command>bash -c '~/.config/aether/change 2'</command>
@@ -112,6 +124,7 @@
         </item>
     </menu>
     <menu id="system-menu" label="System">
+        <separator label="System" />
         <item label="Openbox Configuration Manager">
             <action name="Execute">
                 <command>obconf</command>
@@ -134,15 +147,15 @@
     </menu>
     <menu id="root-menu" label="Openbox 3">
         <separator label="Applications" />
-        <menu id="apps-accessories-menu" icon="/home/iruha/.icons/aether/dark/small/accessories-menu.png"/>
-        <menu id="apps-editors-menu" icon="/home/iruha/.icons/aether/dark/small/editors-menu.png"/>
-        <menu id="apps-net-menu" icon="/home/iruha/.icons/aether/dark/small/internet-menu.png"/>
-        <menu id="apps-term-menu" icon="/home/iruha/.icons/aether/dark/small/terminal-menu.png"/>
-        <menu id="apps-fileman-menu" icon="/home/iruha/.icons/aether/dark/small/filemanager-menu.png"/>
-        <menu id="scripts-menu" icon="/home/iruha/.icons/aether/dark/small/scripts-menu.png"/>
+        <menu id="apps-accessories-menu" icon="/home/iruha/.icons/aether/light/small/accessories-menu.png"/>
+        <menu id="apps-editors-menu" icon="/home/iruha/.icons/aether/light/small/editors-menu.png"/>
+        <menu id="apps-net-menu" icon="/home/iruha/.icons/aether/light/small/internet-menu.png"/>
+        <menu id="apps-term-menu" icon="/home/iruha/.icons/aether/light/small/terminal-menu.png"/>
+        <menu id="apps-fileman-menu" icon="/home/iruha/.icons/aether/light/small/filemanager-menu.png"/>
+        <menu id="scripts-menu" icon="/home/iruha/.icons/aether/light/small/scripts-menu.png"/>
         <separator label="Themes" />
-        <menu id="scripts-theme-menu" icon="/home/iruha/.icons/aether/dark/small/changetheme-menu.png"/>
-        <item label="Change Wallpaper" icon="/home/iruha/.icons/aether/dark/small/changewp.png">
+        <menu id="scripts-theme-menu" icon="/home/iruha/.icons/aether/light/small/changetheme-menu.png"/>
+        <item label="Change Wallpaper" icon="/home/iruha/.icons/aether/light/small/changewp.png">
             <action name="Execute">
                 <command>bash -c '~/.config/aether/scripts/wallpaper change'</command>
                 <startupnotify>
@@ -151,8 +164,8 @@
             </action>
         </item>
         <separator label="System" />
-        <menu id="system-menu" icon="/home/iruha/.icons/aether/dark/small/system-menu.png"/>
-        <item label="Log Out" icon="/home/iruha/.icons/aether/dark/small/logout.png">
+        <menu id="system-menu" icon="/home/iruha/.icons/aether/light/small/system-menu.png"/>
+        <item label="Log Out" icon="/home/iruha/.icons/aether/light/small/logout.png">
             <action name="Exit">
                 <prompt>yes</prompt>
             </action>
