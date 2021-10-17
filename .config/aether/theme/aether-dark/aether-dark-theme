@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# GTK
+sed -i '5s_gtk-theme-name=.*_gtk-theme-name="ZorinGrey"_' ~/.gtkrc-2.0
+sed -i '10s_gtk-theme-name=.*_gtk-theme-name=ZorinGrey_' ~/.config/gtk-3.0/settings.ini
+
+# Icon
+sed -i '6s_gtk-icon-theme-name=.*_gtk-icon-theme-name="oomox-aesthetic-dark"_' ~/.gtkrc-2.0
+sed -i '8s_gtk-icon-theme-name=.*_gtk-icon-theme-name=oomox-aesthetic-dark_' ~/.config/gtk-3.0/settings.ini
+sed -i '4s\icon_theme=.*\icon_theme=oomox-aesthetic-dark\' ~/.config/qt5ct/qt5ct.conf
+
+# Rofi
+sed -i '5s_colorschemes/.*.rasi_colorschemes/fullscreen-dark.rasi_' ~/.config/rofi/themes/shared/settings.rasi
+sed -i '5s_colorschemes/.*.rasi_colorschemes/sidebar-dark.rasi_' ~/.config/rofi/themes/sidebar/colors.rasi

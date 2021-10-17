@@ -1,0 +1,100 @@
+/* Custom Settings */
+.text-button {
+  margin-left: 3px;
+  margin-right: 3px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.text-button:checked {
+  background: #373e4d;
+  border-radius: 6px;
+}
+
+.text-button:hover {
+  color: #cf8ef4;
+  transition: 0.3s;
+}
+
+.image-button {
+  color: #63c5ea;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-left: 1px;
+  padding-right: 1px;
+  transition: 0.3s;
+  border-radius: 99px;
+}
+
+.image-button:hover {
+  background: #56687e;
+  transition: 0.3s;
+}
+
+.image-button:checked {
+  color: #f9f9f9;
+  background: #373e4d;
+}
+
+.image-button:disabled {
+  color: #56687e;
+}
+
+.titlebar {
+  min-height: 48px;
+  box-shadow: none;
+}
+
+.termite {
+  padding: 20px;
+}
+
+/**********
+ * Thunar *
+ **********/
+.thunar #location-toolbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.thunar .standard-view.frame {
+  border-style: none;
+}
+
+.thunar .sidebar {
+  background-image: url("../gtk-assets/thunar-sidebar.png");
+  border: none;
+}
+
+.thunar .sidebar .view:not(:selected) {
+  background-color: transparent;
+  color: #f9f9f9;
+}
+
+.thunar .sidebar .view:selected {
+  /* border-radius: 15px 0px 0px 15px; */
+  background-color: #92D4FF;
+}
+
+.thunar .sidebar .view {
+  padding: 3px 0px;
+}
+
+/* Remove left border */
+paned > separator {
+  min-width: 1px;
+  min-height: 1px;
+  -gtk-icon-source: none;
+  border-style: none;
+  background-color: transparent;
+  background-image: image(rgba(0, 0, 0, 0));
+  background-size: 1px 1px;
+  background-clip: content-box;
+}
+
+.thunar statusbar {
+  margin: 0 -10px;
+  padding: 0 4px;
+  border-top: 1px solid rgba(0, 0, 0, 0);
+}

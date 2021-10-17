@@ -1,0 +1,10 @@
+# GIMP gimp-rect-select-tool options
+
+(desired-fixed-size-height 360)
+(desired-fixed-size-width 256)
+(fixed-rule size)
+(overridden-fixed-size yes)
+(feather-radius 47.600000000000001)
+(corner-radius 4)
+
+# end of gimp-rect-select-tool options

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+case "$1" in
+    1)
+    sed -i '9s_THEME=.*_THEME="aetherLight"_' ~/.aether-corevar
+    ;;
+    2)
+    sed -i '9s_THEME=.*_THEME="aetherDark"_' ~/.aether-corevar
+    ;;
+    *)
+    sed -i '9s_THEME=.*_THEME="aetherLight"_' ~/.aether-corevar
+    ;;
+esac
+
+~/.config/aether/kill-ui &> /dev/null
+~/.config/aether/startup &> /dev/null

@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+# Load Global Variable
+source $HOME/.aether-corevar
+
+# MODIFIED from owl4ce
+
+SCRIPTS_DIR="$HOME/.scripts"
+TIMER_SEC="5"
+SAVE_DIR="$HOME/Pictures"
+COPY_FRAMED="yes" # Copy the latest framed screenshot to clipboard
+OPEN_FRAMED="yes" # Open after framed screenshot with viewnior (if exist)
+QUALITY="100" # 1-100, high value means high size with low compression
+EXNOTIFY_SEND="$SCRIPTS_DIR/notify/notify-send.sh"
+
+NOTIF_SS_ICON="$ICONDIR/shot.png"
+
+{
+    [[ ! -d $SAVE_DIR/Screenshots ]] && mkdir $SAVE_DIR/Screenshots
+    sleep .5s
+    
+    rm /tmp/*_scrot*.png &> /dev/null
+    scrot -q $QUALITY -sfbe 'mv $f /tmp/' -l style=dash,width=3,color="#2be491" &> /dev/null && \
+    $EXNOTIFY_SEND -r 12 -t 750 -i $NOTIF_SS_ICON -u low "Screenshot" "Processing captured image"
+    
+    CURRENT="$(ls /tmp/ | grep 'scrot' | awk -F'.png' '{print $1}')"
+
+    convert /tmp/$CURRENT.png \
+    \( +clone -alpha extract -draw 'fill black polygon 0,0 0,8 8,0 fill white circle 8,8 8,0' \
+    \( +clone -flip \) -compose Multiply -composite \( +clone -flop \) -compose Multiply -composite \) \
+    -alpha off -compose CopyOpacity -composite /tmp/$CURRENT-rounded.png &> /dev/null
+
+    convert /tmp/$CURRENT-rounded.png \( +clone -background black -shadow 25x10+0+5 \) \
+    +swap -background none -layers merge +repage /tmp/$CURRENT-shadow.png &> /dev/null
+
+    convert /tmp/$CURRENT-shadow.png -bordercolor $SSFRAME \
+    -border 5 $SAVE_DIR/Screenshots/$CURRENT.png &> /dev/null
+
+    rm /tmp/*_scrot*.png &> /dev/null
+    
+    [[ -f $SAVE_DIR/Screenshots/$CURRENT.png ]] && \
+    $EXNOTIFY_SEND -r 12 -i $NOTIF_SS_ICON -u low "Screenshot" "Saved in\n<u>$SAVE_DIR/Screenshots/</u>" && \
+    [[ "$COPY_FRAMED" = "yes" ]] && xclip -selection clipboard -target image/png -i $SAVE_DIR/Screenshots/$CURRENT.png && \
+    [[ "$OPEN_FRAMED" = "yes" ]] && [[ -x "$(which "viewnior" 2> /dev/null)" ]] && \
+    viewnior $SAVE_DIR/Screenshots/$CURRENT.png &> /dev/null
+} &

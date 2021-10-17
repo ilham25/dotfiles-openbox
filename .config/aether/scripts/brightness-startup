@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+brightnessCurrent="$(cat ~/.config/i3/scripts/brightness-current)"
+
+brightnessctl set "$brightnessCurrent%"
+

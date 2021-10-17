@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Load Global Variable
+source $HOME/.aether-corevar
+
+# Run i3-msg command and notify
+
+
+i3-msg "$1" >> /dev/null && $NOTIFIER -r 12 -i "$ICONDIR/info.png" -t 750 -u low "$2" "$3"

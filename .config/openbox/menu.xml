@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+    <menu id="apps-accessories-menu" label="Accessories">
+        <item label="Character Map">
+            <action name="Execute">
+                <command>gucharmap</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                </startupnotify>
+            </action>
+        </item>
+    </menu>
+    <menu id="apps-editors-menu" label="Editors">
+        <item label="Visual Studio Code">
+            <action name="Execute">
+                <command>code</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                    <wmclass>Code</wmclass>
+                </startupnotify>
+            </action>
+        </item>
+        <item label="Geany">
+            <action name="Execute">
+                <command>geany</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                    <wmclass>Code</wmclass>
+                </startupnotify>
+            </action>
+        </item>
+    </menu>
+    <menu id="apps-term-menu" label="Terminals">
+        <item label="Rxvt Unicode">
+            <action name="Execute">
+                <command>urxvt</command>
+            </action>
+        </item>
+    </menu>
+    <menu id="apps-net-menu" label="Internet">
+        <item label="Firefox">
+            <action name="Execute">
+                <command>firefox</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                    <wmclass>Firefox</wmclass>
+                </startupnotify>
+            </action>
+        </item>
+        <item label="Google Chrome">
+            <action name="Execute">
+                <command>google-chrome-stable</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                    <wmclass>Google-chrome</wmclass>
+                </startupnotify>
+            </action>
+        </item>
+    </menu>
+    <menu id="apps-fileman-menu" label="File Managers">
+        <item label="Thunar">
+            <action name="Execute">
+                <command>Thunar</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                </startupnotify>
+            </action>
+        </item>
+    </menu>
+    <menu id="scripts-menu" label="Scripts">
+        <item label="Power Menu">
+            <action name="Execute">
+                <command>bash -c '~/.config/rofi/scripts/powermenu.sh'</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                </startupnotify>
+            </action>
+        </item>
+        <item label="Screenshots Menu">
+            <action name="Execute">
+                <command>bash -c '~/.config/rofi/scripts/screenshot.sh'</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                </startupnotify>
+            </action>
+        </item>
+        <item label="Launcher">
+            <action name="Execute">
+                <command>bash -c '~/.config/rofi/scripts/appsmenu.sh'</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                </startupnotify>
+            </action>
+        </item>
+    </menu>
+    <menu id="scripts-theme-menu" label="Change Theme">
+        <item label="Dark Mode">
+            <action name="Execute">
+                <command>bash -c '~/.config/aether/change 2'</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                </startupnotify>
+            </action>
+        </item>
+        <item label="Light Mode">
+            <action name="Execute">
+                <command>bash -c '~/.config/aether/change 1'</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                </startupnotify>
+            </action>
+        </item>
+    </menu>
+    <menu id="system-menu" label="System">
+        <item label="Openbox Configuration Manager">
+            <action name="Execute">
+                <command>obconf</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                </startupnotify>
+            </action>
+        </item>
+        <item label="Reconfigure Openbox">
+            <action name="Reconfigure" />
+        </item>
+        <item label="Tint2 Settings">
+            <action name="Execute">
+                <command>tint2conf</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                </startupnotify>
+            </action>
+        </item>
+    </menu>
+    <menu id="root-menu" label="Openbox 3">
+        <separator label="Applications" />
+        <menu id="apps-accessories-menu" icon="/home/iruha/.icons/aether/dark/small/accessories-menu.png"/>
+        <menu id="apps-editors-menu" icon="/home/iruha/.icons/aether/dark/small/editors-menu.png"/>
+        <menu id="apps-net-menu" icon="/home/iruha/.icons/aether/dark/small/internet-menu.png"/>
+        <menu id="apps-term-menu" icon="/home/iruha/.icons/aether/dark/small/terminal-menu.png"/>
+        <menu id="apps-fileman-menu" icon="/home/iruha/.icons/aether/dark/small/filemanager-menu.png"/>
+        <menu id="scripts-menu" icon="/home/iruha/.icons/aether/dark/small/scripts-menu.png"/>
+        <separator label="Themes" />
+        <menu id="scripts-theme-menu" icon="/home/iruha/.icons/aether/dark/small/changetheme-menu.png"/>
+        <item label="Change Wallpaper" icon="/home/iruha/.icons/aether/dark/small/changewp.png">
+            <action name="Execute">
+                <command>bash -c '~/.config/aether/scripts/wallpaper change'</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                </startupnotify>
+            </action>
+        </item>
+        <separator label="System" />
+        <menu id="system-menu" icon="/home/iruha/.icons/aether/dark/small/system-menu.png"/>
+        <item label="Log Out" icon="/home/iruha/.icons/aether/dark/small/logout.png">
+            <action name="Exit">
+                <prompt>yes</prompt>
+            </action>
+        </item>
+    </menu>
+</openbox_menu>

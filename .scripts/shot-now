@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+# Load Global Variable
+source $HOME/.aether-corevar
+
+# Take screenshot
+# See scrot manual
+
+savedir=~/Pictures/Screenshots
+# Begin
+
+[[ ! -d $savedir ]] && mkdir "$savedir"
+rm /tmp/*_scrot*.png
+
+case $1 in
+    delay)
+    sleep .5s
+    ;;
+    *)
+    ;;
+esac
+
+scrot -e 'mv $f /tmp/'
+current="$(ls /tmp/ | grep 'scrot')"
+cp /tmp/$current $savedir
+rm /tmp/*_scrot*.png
+
+notify-send -i "$ICONDIR/shot.png" -u low "Screenshot" "Saved in\n<u>$savedir/</u>"

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Load Global Variable
+source $HOME/.aether-corevar
+
+$NOTIFIER -r 16 -i "$ICONDIR/$1" -t "$2" -u low "$3" "$4"

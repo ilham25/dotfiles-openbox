@@ -1,0 +1,117 @@
+!! Bear2 by David Barr <david@chalkskeletons.com>
+!! http://david.chalkskeletons.com
+!! another blue theme
+
+!!General
+
+window.handle.width: 0
+window.client.padding.width: 0
+window.client.padding.height: 0
+border.width: 0
+osd.border.width: 0
+padding.width: 5
+menu.overlap: 0
+border.color: #f8f8f8
+window.frameColor: #f8f8f8
+window.*.client.color: #f8f8f8
+*.text.justify: center
+
+!!Fonts
+
+!!window.active.label.text.font: shadow=y:shadowoffset=1:shadowtint=3
+!!window.inactive.label.text.font: shadow=y:shadowoffset=1:shadowtint=0
+!!menu.items.font:
+!!menu.title.text.font: shadow=y:shadowoffset=1:shadowtint=30
+
+!!Menu
+menu.border.color: #f8f8f8
+menu.border.width: 8
+
+menu.title.bg: flat 
+menu.title.bg.color: #f8f8f8
+menu.title.bg.colorTo: #f8f8f8
+menu.title.bg.border.color: #f8f8f8
+menu.title.text.color: #61656b
+
+menu.items.bg: flat
+menu.items.bg.color: #f8f8f8
+menu.items.bg.border.color: #f5f5f5
+
+menu.items.text.color: #333333
+menu.items.disabled.text.color: #babdb6
+
+menu.items.active.bg: flat
+menu.items.active.bg.color: #DFE3E9
+menu.items.active.bg.colorTo: #DFE3E9
+menu.items.active.text.color: #333333
+menu.items.active.bg.border.color: #DFE3E9
+
+!!Active
+
+window.active.title.bg: flat
+window.active.title.bg.color: #ECF2F2
+window.active.title.bg.colorTo: #ECF2F2
+window.active.title.bg.border.color: #ECF2F2
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ECF2F2
+
+window.active.button.*.bg: parentrelative
+window.active.button.*.image.color: #e59aff
+window.active.button.hover.bg.color: #729fcf
+window.active.button.hover.image.color: #ECF2F2
+window.active.button.pressed.bg.color: #a7cef2
+window.active.button.disabled.image.color: #6d8fbc
+
+window.*.grip.bg: flat
+window.*.grip.bg.color: #f8f8f8
+
+!!Inactive
+
+window.inactive.title.bg: flat
+window.inactive.title.bg.color: #ECF2F2
+window.inactive.title.bg.colorTo: #ECF2F2
+window.inactive.title.bg.border.color: #efefef
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #ECF2F2
+
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.image.color:  #888a85
+window.inactive.button.pressed.bg.color: #d3d7cf
+window.inactive.button.pressed.bg.color: #4f5051
+window.inactive.button.disabled.image.color: #d0d0d0
+
+
+# close button
+window.active.button.close.unpressed.image.color:   #FF598B
+window.inactive.button.close.unpressed.image.color:   #e0e0e0
+window.active.button.close.hover.image.color:       #E35298
+window.active.button.close.pressed.image.color:     #FF598B
+window.active.button.close.disabled.image.color:    #FF598B
+window.active.button.close.toggled.unpressed.image.color:   #FF598B
+window.active.button.close.toggled.hover.image.color:       #E35298
+window.active.button.close.toggled.pressed.image.color:     #FF598B
+
+# iconify button
+window.active.button.iconify.unpressed.image.color:   #36ADFB
+window.inactive.button.iconify.unpressed.image.color:   #e0e0e0
+window.active.button.iconify.hover.image.color:       #2092DD
+window.active.button.iconify.pressed.image.color:     #36ADFB
+window.active.button.iconify.disabled.image.color:    #36ADFB
+window.active.button.iconify.toggled.unpressed.image.color:   #36ADFB
+window.active.button.iconify.toggled.hover.image.color:       #2092DD
+window.active.button.iconify.toggled.pressed.image.color:     #36ADFB
+
+# max button
+window.active.button.max.unpressed.image.color:   #FFB630
+window.inactive.button.max.unpressed.image.color:   #e0e0e0
+window.active.button.max.hover.image.color:       #DD9C24
+window.active.button.max.pressed.image.color:     #FFB630
+window.active.button.max.disabled.image.color:    #FFB630
+window.active.button.max.toggled.unpressed.image.color:   #FFB630
+window.active.button.max.toggled.hover.image.color:       #DD9C24
+window.active.button.max.toggled.pressed.image.color:     #FFB630
+
+!! OSD
+osd.label.text.color: #61656b

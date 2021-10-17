@@ -1,0 +1,81 @@
+#!/usr/bin/env bash
+
+# Load Global Variable
+source $HOME/.aether-corevar
+
+aetherLight() {
+    # Dunst
+    dunst -config ~/.config/dunst/dunstrc-left &
+    # GTK, rofi, color theme
+    ~/.config/aether/theme/aether-light/aether-light-theme &
+    # Panel
+    if [[ $PANELPOSITION == "TOP" ]]; then
+        tint2 -c ~/.config/tint2/aether-i3-light.tint2rc &
+    elif [[ $PANELPOSITION == "BOT" ]]; then
+        tint2 -c ~/.config/tint2/aether-i3-light-bot.tint2rc &
+    fi
+    # Terminal Color Scheme
+    xrdb ~/.config/aether/theme/aether-light/.Xresources &
+    # Screenshot frame color
+    sed -i '11s_SSFRAME=.*_SSFRAME="#F9F9F9"_' ~/.aether-corevar &
+    # Notify
+    $NOTIFIER -r 13 -i "$ICONDIR/theme.png" -t 2000 -u low "Light Mode" "Change Theme" &
+    # Live Reload GTK Theme
+    timeout 0.1s xsettingsd -c ~/.config/aether/theme/aether-light/.xsettingsd &
+
+    if [[ $DESKTOP_SESSION == "openbox" ]]; then
+        # Change openbox theme
+        sed -i 's/ZorinGrey/ZorinBlue/g' ~/.config/openbox/rc.xml &> /dev/null
+
+        # Change openbox menu icon based on theme
+        sed -i "s|$HOME\/$ICON_DARK_DIR|$HOME\/$ICON_LIGHT_DIR|g" ~/.config/openbox/menu.xml &>/dev/null
+        sed -i "s|iruha|$USER|g" ~/.config/openbox/menu.xml &>/dev/null
+
+        # Reconfigure Openbox
+        openbox --reconfigure 
+    fi
+}
+aetherDark() {
+    # Dunst
+    dunst -config ~/.config/dunst/dunstrc-dark-left &
+    # GTK, rofi, color theme
+    ~/.config/aether/theme/aether-dark/aether-dark-theme &
+    # Panel
+    if [[ $PANELPOSITION == "TOP" ]]; then
+        tint2 -c ~/.config/tint2/aether-i3-dark.tint2rc &
+    elif [[ $PANELPOSITION == "BOT" ]]; then
+        tint2 -c ~/.config/tint2/aether-i3-dark-bot.tint2rc &
+    fi
+    # Terminal Color Scheme
+    xrdb ~/.config/aether/theme/aether-dark/.Xresources &
+    # Screenshot frame color
+    sed -i '11s_SSFRAME=.*_SSFRAME="#21252B"_' ~/.aether-corevar &
+    # Notify
+    $NOTIFIER -r 13 -i "$ICONDIR/theme.png" -t 2000 -u low "Dark Mode" "Change Theme" &
+    # Live Reload GTK Theme
+    timeout 0.1s xsettingsd -c ~/.config/aether/theme/aether-dark/.xsettingsd &
+
+    if [[ $DESKTOP_SESSION == "openbox" ]]; then
+        # Change openbox theme
+        sed -i 's/ZorinBlue/ZorinGrey/g' ~/.config/openbox/rc.xml &> /dev/null
+
+        # Change openbox menu icon based on theme
+        sed -i "s|$HOME\/$ICON_LIGHT_DIR|$HOME\/$ICON_DARK_DIR|g" ~/.config/openbox/menu.xml &>/dev/null
+        sed -i "s|iruha|$USER|g" ~/.config/openbox/menu.xml &>/dev/null
+
+        # Reconfigure Openbox
+        openbox --reconfigure
+    fi
+}
+
+# Load rofi theme based on resolution
+~/.config/aether/scripts/change-resolution $RESOLUTION &
+
+# Load Theme
+"$THEME" &
+
+# Wallpaper
+~/.config/aether/scripts/wallpaper &> /dev/null &
+
+exit
+

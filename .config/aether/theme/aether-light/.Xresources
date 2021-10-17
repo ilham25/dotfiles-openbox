@@ -1,0 +1,98 @@
+! URXVT APPEARANCE
+URxvt.font:                       xft:JetBrainsMonoMedium nerd font mono:size=10
+URxvt.geometry:                   74x17
+URxvt.internalBorder:             20
+URxvt.cursorBlink:                true
+URxvt.cursorUnderline:            true
+URxvt.saveline:                   32768
+URxvt.scrollBar:                  false
+URxvt.scrollBar_right:            true
+URxvt.scrollBar_floating:         false
+URxvt.scrollstyle:                plain
+URxvt.urgentOnBell:               false
+URxvt.depth:                      32
+URxvt.iso14755:                   false
+URxvt.iconFile:                   /home/iruha/.icons/gladient/term.png
+URxvt.letterSpace: -1
+
+! URXVT EXTENSIONS
+URxvt.perl-ext-common:            default,clipboard,keyboard-select,url-select,tabbedex
+
+URxvt.tabbedex.no-tabbedex-keys:  yes
+URxvt.tabbedex.new-button:        false
+URXvt.tabbedex.reopen-on-close:   yes
+URxvt.tabbedex.autohide:          yes
+
+URxvt.tabbedex.tabbar-fg:         4
+URxvt.tabbedex.tabbar-bg:         0
+URxvt.tabbedex.tab-fg:            7
+URxvt.tabbedex.tab-bg:            0
+URxvt.tabbedex.bell-fg:           0
+URxvt.tabbedex.bell-bg:           0
+URxvt.tabbedex.bell-tab-fg:       0
+URxvt.tabbedex.bell-tab-bg:       0
+URxvt.tabbedex.title-fg:          7
+URxvt.tabbedex.title-bg:          0
+
+URxvt.keysym.Control-Shift-T:     perl:tabbedex:new_tab
+URxvt.keysym.Control-Shift-R:     perl:tabbedex:rename_tab
+URxvt.keysym.Control-Shift-W:     perl:tabbedex:kill_tab
+URxvt.keysym.Control-Next:        perl:tabbedex:next_tab
+URxvt.keysym.Control-Prior:       perl:tabbedex:prev_tab
+URxvt.keysym.Control-Shift-Next:  perl:tabbedex:move_tab_right
+URxvt.keysym.Control-Shift-Prior: perl:tabbedex:move_tab_left
+
+URxvt.clipboard.copycmd:          xclip -i -selection clipboard
+URxvt.clipboard.pastecmd:         xclip -o -selection clipboard
+URxvt.keysym.M-c:                 perl:clipboard:copy
+URxvt.keysym.M-v:                 perl:clipboard:paste
+URxvt.keysym.M-Escape:            perl:keyboard-select:activate
+URxvt.keysym.M-s:                 perl:keyboard-select:search
+
+URxvt.urlLauncher:                google-chrome-stable
+URxvt.underlineURLs:              true
+URxvt.urlButton:                  1
+
+!COLOR SCHEME
+! special
+*.foreground:   #61656b
+*.background:   [98]#ECF2F2
+*.cursorColor:  #61656b
+
+! black
+*.color0:       #f0f0f0
+*.color8:       #383c42
+
+! red
+*.color1:       #ff598b
+*.color9:       #ff598b
+
+! green
+*.color2:       #1fe0a6
+*.color10:      #1fe0a6
+
+! yellow
+*.color3:       #ffb630
+*.color11:      #ffb630
+
+! blue
+*.color4:       #36adfb
+*.color12:      #36adfb
+
+! magenta
+*.color5:       #b467f9
+*.color13:      #b467f9
+
+! cyan
+*.color6:       #2bcafc
+*.color14:      #2bcafc
+
+! white
+*.color7:       #61656b
+*.color15:      #61656b
+
+
+
+
+
+

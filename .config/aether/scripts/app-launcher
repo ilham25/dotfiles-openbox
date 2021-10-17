@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+source $HOME/.aether-corevar
+
+case "$1" in
+    "FM")
+        bash -c $FILEMANAGER
+    ;;
+    "TERMINAL")
+        bash -c $TERMINAL
+    ;;
+    *)
+        $NOTIFIER -r 14 -t 2500 -u low "Not Available" "App Launcher"
+    ;;
+esac

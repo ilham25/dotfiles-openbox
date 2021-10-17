@@ -1,0 +1,49 @@
+# ******************************* #
+# Aether dotfiles global variable #
+# Inspirated from owl4ce dotfiles #
+# ******************************* #
+
+# ******************************** #
+# DON'T EDIT OR MOVE THIS VARIABLE #
+# ******************************** #
+THEME="aetherDark"
+WALLPAPER="DEFAULT"
+SSFRAME="#21252B"
+PANELPOSITION="BOT"
+WALLPAPER_LIGHT="~/.wallpaper/aether-light.png"
+WALLPAPER_DARK="~/.wallpaper/aether-dark.png"
+
+ICON_LIGHT_DIR=".icons/aether/light"
+ICON_DARK_DIR=".icons/aether/dark"
+
+if [[ $THEME == "aetherDark" ]]; then ICONDIR="$HOME/$ICON_DARK_DIR"; elif [[ $THEME == "aetherLight" ]]; then ICONDIR="$HOME/$ICON_LIGHT_DIR"; fi
+
+# ****************** #
+# Notifier directory #
+# ****************** #
+NOTIFIER="$HOME/.scripts/notify/notify-send.sh"
+
+# ************************************************** #
+# Customize this to your variable value to your own  #
+# ************************************************** #
+
+# ************************************************** #
+#                 Network interface                  #
+# if this variable doesn't work, feel free to change #
+# ************************************************** #
+ETHERNETINT=$(ls /sys/class/net | grep ^e) # this will capture enpX or ethX
+WIRELESSINT=$(ls /sys/class/net | grep wl) # this will capture wlpX or wloX
+
+# ********************************************************* #
+#                     Screen resolution                     #
+# After changing resolution value, please switch your theme #
+# ********************************************************* #
+RESOLUTION="1366x768" # Available options : 1366x768 and 1920x1080
+
+# ****************** #
+# Power Menu Command #
+# ****************** #
+POWEROFF="poweroff" # systemd default
+REBOOT="reboot" # systemd default
+LOCK="dm-tool lock"
+SLEEP="suspend" # systemd default
