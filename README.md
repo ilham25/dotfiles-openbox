@@ -1,4 +1,4 @@
-# Aether Desktop
+![greeting](/Other/greeting.png)
 
 <img alt="Visits" src="https://badges.pufler.dev/visits/ilham25/dotfiles-openbox?style=flat-square&label=&color=success&logo=GitHub&logoColor=white&labelColor=373e4d"/>
 <img alt="Repo Size" src="https://github-size-badge.herokuapp.com/ilham25/dotfiles-openbox.svg"/>
@@ -136,6 +136,8 @@ yay -S dunst tint2 gsimplecal rofi feh lxappearance qt5ct qt5-styleplugins lxses
 
 </details>
 
+After dependencies is installed, you can go further to **[dotfiles installation](#dotfiles-install)** below, or if you want to install oh-my-zsh, you can install it first.
+
 ### :diamonds: Oh-my-zsh and zsh (optional)
 
 <details>
@@ -167,7 +169,7 @@ git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:=~/.oh-m
 
 </details>
 
-### :wrench: Dotfiles Install
+### :wrench: Dotfiles Install {#dotfiles-install}
 
 <details>
   <summary>Click for detail</summary>
@@ -210,12 +212,36 @@ git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:=~/.oh-m
 fc-cache -rv
 ```
 
+Congratulation! You have installed **aether dotfiles** :clap::clap:, next step is you can use learn **[the keybind](#keybinds)** i use in this theme. For the first time using it maybe you need some practice, but as time go on, you will get used of it and doesn't have trouble again!:v:
+
 </details>
 
-### :gear: User Configuration
+</details>
+
+## :black_square_button: Keybinds {#keybinds}
 
 <details>
   <summary>Click for detail</summary>
+
+| Key                                    | Action                                  |
+| -------------------------------------- | --------------------------------------- |
+| <kbd>Mod + C                           | Close Windows                           |
+| <kbd>Mod + Shift + Space               | Switch between normal/maximized         |
+| <kbd>Mod + Left Click (hold)           | Move Windows                            |
+| <kbd>Mod + Right Click (hold)          | Resize Windows                          |
+| <kbd>Mod + 1/2/3/4/5/6/7/8/9/0         | Change Workspace                        |
+| <kbd>Mod + Shift + 1/2/3/4/5/6/7/8/9/0 | Move active windows to workspace number |
+| <kbd>Mod + E                           | Open file manager                       |
+| <kbd>Mod + R                           | App launcher                            |
+| <kbd>Mod + L                           | Lock Screen                             |
+| <kbd>Mod + Return                      | Open terminal                           |
+| <kbd>Mod + Shift + E                   | Power Menu                              |
+| <kbd>Mod + Shift + C                   | WM Restart                              |
+| <kbd>Mod + Print                       | Screenshot Menu                         |
+
+</details>
+
+## :gear: User Configuration
 
 **:desktop_computer: Screen Resolution**
 This dotfiles only support **1366x768** and **1920x1080** screen resolution.
@@ -255,33 +281,6 @@ Change the configuration below
 42 SLEEP="suspend" # systemd default
 ...
 ```
-
-</details>
-
-</details>
-
-## :black_square_button: Keybinds
-
-<details>
-  <summary>Click for detail</summary>
-
-| Key                                    | Action                                  |
-| -------------------------------------- | --------------------------------------- |
-| <kbd>Mod + C                           | Close Windows                           |
-| <kbd>Mod + Shift + Space               | Switch between normal/maximized         |
-| <kbd>Mod + Left Click (hold)           | Move Windows                            |
-| <kbd>Mod + Right Click (hold)          | Resize Windows                          |
-| <kbd>Mod + 1/2/3/4/5/6/7/8/9/0         | Change Workspace                        |
-| <kbd>Mod + Shift + 1/2/3/4/5/6/7/8/9/0 | Move active windows to workspace number |
-| <kbd>Mod + E                           | Open file manager                       |
-| <kbd>Mod + R                           | App launcher                            |
-| <kbd>Mod + L                           | Lock Screen                             |
-| <kbd>Mod + Return                      | Open terminal                           |
-| <kbd>Mod + Shift + E                   | Power Menu                              |
-| <kbd>Mod + Shift + C                   | WM Restart                              |
-| <kbd>Mod + Print                       | Screenshot Menu                         |
-
-</details>
 
 ## :heart: Credits
 
