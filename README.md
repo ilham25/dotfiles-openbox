@@ -212,7 +212,7 @@ git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:=~/.oh-m
 fc-cache -rv
 ```
 
-Congratulation! You have installed **aether dotfiles** :clap::clap:, next step is you can use learn **[the keybind](#black_square_button-keybinds)** i use in this theme. For the first time using it maybe you need some practice, but as time go on, you will get used of it and doesn't have trouble again!:v:
+Congratulation! You have installed **aether dotfiles** :clap::clap:, next step is you can learn **[the keybinds](#black_square_button-keybinds)** that i use in this theme. For the first time using it maybe you need some practice, but as time go on, you will get used of it and doesn't have trouble again!:v:
 
 </details>
 
