@@ -169,7 +169,7 @@ git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:=~/.oh-m
 
 </details>
 
-### :wrench: Dotfiles Install {#dotfiles-install}
+### :wrench: Dotfiles Install
 
 <details>
   <summary>Click for detail</summary>
@@ -218,7 +218,7 @@ Congratulation! You have installed **aether dotfiles** :clap::clap:, next step i
 
 </details>
 
-## :black_square_button: Keybinds {#keybinds}
+## :black_square_button: Keybinds
 
 <details>
   <summary>Click for detail</summary>
