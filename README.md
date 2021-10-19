@@ -136,7 +136,7 @@ yay -S dunst tint2 gsimplecal rofi feh lxappearance qt5ct qt5-styleplugins lxses
 
 </details>
 
-After dependencies is installed, you can go further to **[dotfiles installation](#dotfiles-install)** below, or if you want to install oh-my-zsh, you can install it first.
+After dependencies is installed, you can go further to **[dotfiles installation](#wrench-dotfiles-install)** below, or if you want to install oh-my-zsh, you can install it first.
 
 ### :diamonds: Oh-my-zsh and zsh (optional)
 
@@ -212,7 +212,7 @@ git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:=~/.oh-m
 fc-cache -rv
 ```
 
-Congratulation! You have installed **aether dotfiles** :clap::clap:, next step is you can use learn **[the keybind](#keybinds)** i use in this theme. For the first time using it maybe you need some practice, but as time go on, you will get used of it and doesn't have trouble again!:v:
+Congratulation! You have installed **aether dotfiles** :clap::clap:, next step is you can use learn **[the keybind](#black_square_button-keybinds)** i use in this theme. For the first time using it maybe you need some practice, but as time go on, you will get used of it and doesn't have trouble again!:v:
 
 </details>
 
