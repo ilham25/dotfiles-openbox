@@ -1,4 +1,4 @@
-![greeting](/Other/greeting.png)
+![greetings](/Other/greetings.png)
 
 <img alt="Visits" src="https://badges.pufler.dev/visits/ilham25/dotfiles-openbox?style=flat-square&label=&color=success&logo=GitHub&logoColor=white&labelColor=373e4d"/>
 <img alt="Repo Size" src="https://github-size-badge.herokuapp.com/ilham25/dotfiles-openbox.svg"/>
@@ -284,7 +284,7 @@ Change the configuration below
 
 ## :heart: Credits
 
-- [openbox Wiki](http://openbox.org/wiki/Help:Contents)
+- [Openbox Wiki](http://openbox.org/wiki/Help:Contents)
 - [@owl4ce](https://github.com/owl4ce/)
 - [@nwg-piotr - psuinfo](https://github.com/nwg-piotr)
 - [@firecat53 - networkmanager-dmenu](https://github.com/firecat53)
