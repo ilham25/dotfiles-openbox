@@ -94,7 +94,7 @@ sudo apt install feh rsync python psmisc wireless-tools alsa-utils brightnessctl
 </details>
 
 <details>
-  <summary>Arch based</summary>
+  <summary>Arch based distro</summary>
 
 > :exclamation: For AUR helper, im using **yay**
 
@@ -256,7 +256,7 @@ Change the value to your own screen resolution
 
 ```cfg
 ...
-34 RESOLUTION="1366x768" # Change this value
+41 RESOLUTION="1366x768" # Change this value
 ...
 ```
 
@@ -275,10 +275,10 @@ Change the configuration below
 
 ```cfg
 ...
-39 POWEROFF="poweroff" # systemd default
-40 REBOOT="reboot" # systemd default
-41 LOCK="dm-tool lock"
-42 SLEEP="suspend" # systemd default
+46 POWEROFF="poweroff" # systemd default
+47 REBOOT="reboot" # systemd default
+48 LOCK="dm-tool lock"
+49 SLEEP="suspend" # systemd default
 ...
 ```
 
