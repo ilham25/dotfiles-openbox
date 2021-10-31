@@ -12,7 +12,7 @@
 - **Shell :** zsh
 - **Panel :** tint2
 - **Notification :** dunst
-- **App launcher :** rofi
+- **App launcher :** rofi (**use v.1.7.0**)
 - **File manager :** thunar
 
 ## :triangular_flag_on_post: Changelog
