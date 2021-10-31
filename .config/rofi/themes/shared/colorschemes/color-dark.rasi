@@ -7,8 +7,8 @@
   wifi-accent: #FF598B;
   blue: #33AEFF;
   green: #1FE0A6;
-  bg-hover: #21252b;
-  fg-hover: #33AEFF;
+  bg-hover: #33AEFF;
+  fg-hover: #15191f;
   fg-unhover: #33AEFF;
   network-header: url("assets/dark/network-header.png", height);
   launcher-header: url("assets/dark/launcher-header.png", height);
