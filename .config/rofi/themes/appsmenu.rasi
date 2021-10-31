@@ -1,52 +1,73 @@
-/**
- * This theme is intended for a 8x2 items list menu with a headerbar.
- */
- 
 @import "shared/settings.rasi"
+
 * {
-  background-color: @background;
-  text-color: @foreground-list;
-  font: @text-font;
+  background-color: @bg;
+  font: "Rubik Regular 9";
 }
-#window {
-  padding: @list-8-window-padding;
+window {
+  width: 700px;
+  height: 500px;
+  border-radius: 6px;
 }
-inputbar,
-prompt,
-textbox-prompt-colon,
+
+mainbox {
+  background-color: @bg;
+}
+
+inputbar {
+  padding: 0px 0px 0px 0px;
+  background-color: transparent;
+  children: [entry];
+  padding: 50px 0px;
+  background-image: @launcher-header;
+}
+
 entry {
-  background-color: @background-light;
+  background-color: @bg-light;
+  padding: 5px;
+  margin: 0px 200px;
+  horizontal-align: 0.5;
+  color: @fg;
+  border-radius: 5px;
+  placeholder: "Search";
+  placeholder-color: #b3b7bd;
 }
-#inputbar {
-  children: [ prompt, textbox-prompt-colon, entry ];
-  margin: @inputbar-margin;
-  border-radius: 8px;
+
+listview {
+  columns: 4;
+  spacing: 5px;
+  fixed-columns: true;
+  background-color: transparent;
+  padding: 3%;
 }
-#prompt {
-  padding: @prompt-padding;
-  background-color: @background-focus;
-  text-color: @accent;
+
+element {
+  orientation: vertical;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-#textbox-prompt-colon {
-  expand: false;
-  str: "";
-  padding: @apps-textbox-prompt-colon-padding;
+
+element selected {
+  background-color: @bg-hover;
 }
-#entry {
-  text-color: @foreground;
-  padding: @entry-padding;
+
+element-icon {
+  background-color: transparent;
+  size: 48;
+  horizontal-align: 0.5;
+  cursor: inherit;
 }
-#element {
-  padding: @list-element-padding;
-  margin: @list-element-margin;
-  border: @list-element-border;
-  background-color: @background-light;
-  border-color: @background-light;
-  border-radius: 8px;
+element-text {
+  horizontal-align: 0.5;
+  color: @fg;
+  background-color: transparent;
+  padding: 10px 5px;
+  cursor: inherit;
 }
-#element.selected {
-  background-color: @background-focus;
-  text-color: @foreground-list;
-  border-color: @background;
-  border-radius: 8px;
+
+element-text selected {
+  color: @fg-hover;
 }
+

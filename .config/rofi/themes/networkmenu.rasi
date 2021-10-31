@@ -1,62 +1,56 @@
-/**
- * This theme is intended for a 8 items list menu with a headerbar.
- */
+@import "shared/settings.rasi"
 
-configuration {
-  show-icons: false;
-  columns: 1;
+* {
+  background-color: @bg;
+  font: "Rubik Regular 9";
+}
+window {
+  width: 275px;
+  height: 400px;
+  anchor: south west;
+  location: south west;
+  x-offset: 6px;
+  y-offset: -41px;
+  transparency: 0.5;
+  border-radius: 6px;
 }
 
-@import "shared/settings.rasi" * {
-  background-color: @background;
-  text-color: @foreground-list;
-  font: @text-font;
+heading {
+    orientation: horizontal;
+    background-image: @network-header;
+    expand: false; 
+    padding: 35px;
+    background-color: transparent;
 }
-#window {
-  width: 40%;
-  height: 50%;
-  anchor: @network-anchor-bot;
-  location: @network-anchor-bot;
-  x-offset: @network-x-offset-bot;
-  y-offset: @network-y-offset-bot;
-  padding: @list-8-window-network-padding;
+
+mainbox {
+  background-color: @bg;
+  children: [heading,listview];
 }
-inputbar,
-prompt,
-textbox-prompt-colon,
-entry {
-  background-color: @background-light;
+
+listview {
+  spacing: 10px;
+  padding: 0px 20px 20px 20px;
+  background-color: transparent;
 }
-#inputbar {
-  children: [ prompt, textbox-prompt-colon, entry ];
-  margin: @inputbar-margin;
-  border-radius: 8px;
+
+element {
+  background-color: @bg-semilight;
+  padding: 10px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  children: [element-text];
 }
-#prompt {
-  padding: @prompt-padding;
-  background-color: @background-focus;
-  text-color: @accent;
+
+
+element selected {
+  background-color: @bg-light;
+  border: 0px solid 0px solid 1px solid 0px solid;
+  border-color: @wifi-accent;
 }
-#textbox-prompt-colon {
-  expand: false;
-  text-color: @foreground;
-  padding: @network-textbox-prompt-colon-padding;
-}
-#entry {
-  text-color: @foreground;
-  padding: @entry-padding;
-}
-#element {
-  padding: @list-element-padding;
-  margin: @list-element-margin;
-  border: @list-element-border;
-  background-color: @background-light;
-  border-color: @background-light;
-  border-radius: 8px;
-}
-#element.selected {
-  background-color: @background-focus;
-  text-color: @foreground-list;
-  border-color: @background;
-  border-radius: 8px;
+
+element-text {
+  color: @fg;
+  background-color: transparent;
+  cursor: inherit;
 }

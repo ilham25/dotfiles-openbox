@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-rofi_command="rofi -theme themes/sidebar/three.rasi"
+rofi_command="rofi -theme themes/screenshotsmenu.rasi"
 
 # Options
 screen=""

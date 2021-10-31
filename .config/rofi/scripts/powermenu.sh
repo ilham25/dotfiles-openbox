@@ -3,7 +3,7 @@
 # Load Global Variable
 source $HOME/.aether-corevar
 
-rofi_command="rofi -theme themes/sidebar/five.rasi"
+rofi_command="rofi -theme themes/powermenu.rasi"
 
 # Options
 shutdown=""

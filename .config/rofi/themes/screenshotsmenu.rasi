@@ -1,35 +1,26 @@
 @import "shared/settings.rasi"
 
 * {
-    icon-font: "feather 24";
+    icon-font: "feather 18";
     background-color: @bg;
 }
 
 window {
-    width: 200px;
+    width: 100px;
+    height: 260px;
+    location: east;
+    x-offset: -6px;
     border-radius: 8px;
 }
 
 mainbox {
-    children: [inputbar,listview];
-    padding: 5px 0px;
-}
-
-inputbar {
-    orientation: horizontal;
-    children: [prompt];
-    padding: 10px 0px;
-}
-
-prompt {
-    color: @bg-hover;
-    font: "Rubik Regular 12";
-    padding: 0px 70px 0px 40px;
+    children: [listview];
 }
 
 listview {
-    columns: 2;
-    lines: 1;
+    spacing: 15px;
+    columns: 1;
+    lines: 3;
     children: [element-text];
     padding: 10px 15px 10px -5px;
 }
