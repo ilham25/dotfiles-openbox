@@ -58,6 +58,10 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 
+.thunar toolbar > toolitem entry {
+  background-color: #ecf2f2;
+}
+
 .thunar .standard-view.frame {
   border-style: none;
 }
@@ -74,7 +78,7 @@
 
 .thunar .sidebar .view:selected {
   /* border-radius: 15px 0px 0px 15px; */
-  background-color: #92D4FF;
+  background-color: #92d4ff;
 }
 
 .thunar .sidebar .view {

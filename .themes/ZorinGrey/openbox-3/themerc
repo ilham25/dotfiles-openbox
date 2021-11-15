@@ -20,28 +20,28 @@ menu.items.font:
 menu.title.text.font: shadow=no:shadowoffset=0:shadowtint=30
 
 !!Menu
-menu.border.color: #2b2f35
-menu.border.width: 8
+menu.border.color: #15191f
+menu.border.width: 5
 
 menu.title.bg: flat 
-menu.title.bg.color: #2b2f35
-menu.title.bg.colorTo: #2b2f35
-menu.title.bg.border.color: #f9f9f9
+menu.title.bg.color: #15191f
+menu.title.bg.colorTo: #15191f
+menu.title.bg.border.color: #ecf2f2
 menu.title.border.width: 5
 menu.title.text.color: #33aeff
 
 menu.items.bg: flat
-menu.items.bg.color: #2b2f35
+menu.items.bg.color: #15191f
 menu.items.bg.border.color: #fff
 
-menu.items.text.color: #f9f9f9
+menu.items.text.color: #ecf2f2
 menu.items.disabled.text.color: #babdb6
 
 menu.items.active.bg: flat
-menu.items.active.bg.color: #21252b
-menu.items.active.bg.colorTo: #21252b
-menu.items.active.text.color: #f9f9f9
-menu.items.active.bg.border.color: #21252b
+menu.items.active.bg.color: #15191f
+menu.items.active.bg.colorTo: #15191f
+menu.items.active.text.color: #33aeff
+menu.items.active.bg.border.color: #15191f
 
 menu.overlap.x: -15
 
@@ -81,37 +81,37 @@ window.inactive.label.bg: parentrelative
 window.inactive.label.text.color: #15191f
 
 window.inactive.button.*.bg: parentrelative
-window.inactive.button.*.image.color:  #888a85
+window.inactive.button.*.image.color:  #2b2f35
 window.inactive.button.pressed.bg.color: #d3d7cf
 window.inactive.button.pressed.bg.color: #4f5051
 window.inactive.button.disabled.image.color: #d0d0d0
 
 !! close button
-window.active.button.close.unpressed.image.color:   #4ab5e2
+window.active.button.close.unpressed.image.color:   #33aeff
 window.active.button.close.hover.image.color:       #3f99bf
-window.active.button.close.pressed.image.color:     #4ab5e2
-window.active.button.close.disabled.image.color:    #4ab5e2
-window.active.button.close.toggled.unpressed.image.color:   #4ab5e2
+window.active.button.close.pressed.image.color:     #33aeff
+window.active.button.close.disabled.image.color:    #33aeff
+window.active.button.close.toggled.unpressed.image.color:   #33aeff
 window.active.button.close.toggled.hover.image.color:       #3f99bf
-window.active.button.close.toggled.pressed.image.color:     #4ab5e2
+window.active.button.close.toggled.pressed.image.color:     #33aeff
 
 !! iconify button
-window.active.button.iconify.unpressed.image.color:   #FFC457
-window.active.button.iconify.hover.image.color:       #BA7F12
-window.active.button.iconify.pressed.image.color:     #FFC457
-window.active.button.iconify.disabled.image.color:    #FFC457
-window.active.button.iconify.toggled.unpressed.image.color:   #FFC457
-window.active.button.iconify.toggled.hover.image.color:       #BA7F12
-window.active.button.iconify.toggled.pressed.image.color:     #FFC457
+window.active.button.iconify.unpressed.image.color:   #6BC4FF
+window.active.button.iconify.hover.image.color:       #0094F5
+window.active.button.iconify.pressed.image.color:     #6BC4FF
+window.active.button.iconify.disabled.image.color:    #6BC4FF
+window.active.button.iconify.toggled.unpressed.image.color:   #6BC4FF
+window.active.button.iconify.toggled.hover.image.color:       #0094F5
+window.active.button.iconify.toggled.pressed.image.color:     #6BC4FF
 
 !! max button
-window.active.button.max.unpressed.image.color:   #d34a84
-window.active.button.max.hover.image.color:       #9c3661
-window.active.button.max.pressed.image.color:     #d34a84
-window.active.button.max.disabled.image.color:    #d34a84
-window.active.button.max.toggled.unpressed.image.color:   #d34a84
-window.active.button.max.toggled.hover.image.color:       #9c3661
-window.active.button.max.toggled.pressed.image.color:     #d34a84
+window.active.button.max.unpressed.image.color:   #A3DBFF
+window.active.button.max.hover.image.color:       #0094F5
+window.active.button.max.pressed.image.color:     #A3DBFF
+window.active.button.max.disabled.image.color:    #A3DBFF
+window.active.button.max.toggled.unpressed.image.color:   #A3DBFF
+window.active.button.max.toggled.hover.image.color:       #0094F5
+window.active.button.max.toggled.pressed.image.color:     #A3DBFF
 
 !! OSD
-osd.label.text.color: #f9f9f9
+osd.label.text.color: #ecf2f2

@@ -24,27 +24,29 @@ window.*.client.color: #f8f8f8
 !!menu.title.text.font: shadow=y:shadowoffset=1:shadowtint=30
 
 !!Menu
-menu.border.color: #f8f8f8
-menu.border.width: 8
+menu.border.color: #ecf2f2
+menu.border.width: 5
 
 menu.title.bg: flat 
-menu.title.bg.color: #f8f8f8
-menu.title.bg.colorTo: #f8f8f8
-menu.title.bg.border.color: #f8f8f8
-menu.title.text.color: #61656b
+menu.title.bg.color: #ecf2f2
+menu.title.bg.colorTo: #ecf2f2
+menu.title.bg.border.color: #ecf2f2
+menu.title.text.color: #FF598B
 
 menu.items.bg: flat
-menu.items.bg.color: #f8f8f8
+menu.items.bg.color: #ecf2f2
 menu.items.bg.border.color: #f5f5f5
 
 menu.items.text.color: #333333
 menu.items.disabled.text.color: #babdb6
 
+menu.overlap.x: -15
+
 menu.items.active.bg: flat
-menu.items.active.bg.color: #DFE3E9
-menu.items.active.bg.colorTo: #DFE3E9
-menu.items.active.text.color: #333333
-menu.items.active.bg.border.color: #DFE3E9
+menu.items.active.bg.color: #ecf2f2
+menu.items.active.bg.colorTo: #ecf2f2
+menu.items.active.text.color: #9984EF
+menu.items.active.bg.border.color: #ecf2f2
 
 !!Active
 
@@ -77,7 +79,7 @@ window.inactive.label.bg: parentrelative
 window.inactive.label.text.color: #ECF2F2
 
 window.inactive.button.*.bg: parentrelative
-window.inactive.button.*.image.color:  #888a85
+window.inactive.button.*.image.color:  #ffd6e2
 window.inactive.button.pressed.bg.color: #d3d7cf
 window.inactive.button.pressed.bg.color: #4f5051
 window.inactive.button.disabled.image.color: #d0d0d0
@@ -85,7 +87,7 @@ window.inactive.button.disabled.image.color: #d0d0d0
 
 # close button
 window.active.button.close.unpressed.image.color:   #FF598B
-window.inactive.button.close.unpressed.image.color:   #e0e0e0
+window.inactive.button.close.unpressed.image.color:   #ffd6e2
 window.active.button.close.hover.image.color:       #E35298
 window.active.button.close.pressed.image.color:     #FF598B
 window.active.button.close.disabled.image.color:    #FF598B
@@ -94,24 +96,24 @@ window.active.button.close.toggled.hover.image.color:       #E35298
 window.active.button.close.toggled.pressed.image.color:     #FF598B
 
 # iconify button
-window.active.button.iconify.unpressed.image.color:   #36ADFB
-window.inactive.button.iconify.unpressed.image.color:   #e0e0e0
-window.active.button.iconify.hover.image.color:       #2092DD
-window.active.button.iconify.pressed.image.color:     #36ADFB
-window.active.button.iconify.disabled.image.color:    #36ADFB
-window.active.button.iconify.toggled.unpressed.image.color:   #36ADFB
-window.active.button.iconify.toggled.hover.image.color:       #2092DD
-window.active.button.iconify.toggled.pressed.image.color:     #36ADFB
+window.active.button.iconify.unpressed.image.color:   #9984EF
+window.inactive.button.iconify.unpressed.image.color:   #ffd6e2
+window.active.button.iconify.hover.image.color:       #6B5CA7
+window.active.button.iconify.pressed.image.color:     #9984EF
+window.active.button.iconify.disabled.image.color:    #9984EF
+window.active.button.iconify.toggled.unpressed.image.color:   #9984EF
+window.active.button.iconify.toggled.hover.image.color:       #6B5CA7
+window.active.button.iconify.toggled.pressed.image.color:     #9984EF
 
 # max button
-window.active.button.max.unpressed.image.color:   #FFB630
-window.inactive.button.max.unpressed.image.color:   #e0e0e0
+window.active.button.max.unpressed.image.color:   #33aeff
+window.inactive.button.max.unpressed.image.color:   #ffd6e2
 window.active.button.max.hover.image.color:       #DD9C24
-window.active.button.max.pressed.image.color:     #FFB630
-window.active.button.max.disabled.image.color:    #FFB630
-window.active.button.max.toggled.unpressed.image.color:   #FFB630
+window.active.button.max.pressed.image.color:     #33aeff
+window.active.button.max.disabled.image.color:    #33aeff
+window.active.button.max.toggled.unpressed.image.color:   #33aeff
 window.active.button.max.toggled.hover.image.color:       #DD9C24
-window.active.button.max.toggled.pressed.image.color:     #FFB630
+window.active.button.max.toggled.pressed.image.color:     #33aeff
 
 !! OSD
 osd.label.text.color: #61656b

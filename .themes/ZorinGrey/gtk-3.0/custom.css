@@ -58,8 +58,16 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 
+.thunar toolbar > toolitem entry {
+  background-color: #15191f;
+}
+
 .thunar .standard-view.frame {
   border-style: none;
+}
+.thunar .standard-view .view:selected {
+  background-color: #2b2f35;
+  color: white;
 }
 
 .thunar .sidebar {
@@ -83,11 +91,6 @@
 
 .thunar .sidebar .view {
   padding: 2px 0px;
-}
-
-paned > scrolledwindow > treeview {
-  width: 170px;
-  background-color: red;
 }
 
 /* Remove left border */
