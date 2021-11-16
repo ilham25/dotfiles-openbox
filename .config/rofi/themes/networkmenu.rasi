@@ -7,10 +7,10 @@
 window {
   width: 275px;
   height: 400px;
-  anchor: south west;
-  location: south west;
-  x-offset: 6px;
-  y-offset: -41px;
+  anchor: north west;
+  location: north west;
+  x-offset: 40px;
+  y-offset: 5px;
   transparency: 0.5;
   border-radius: 6px;
 }
