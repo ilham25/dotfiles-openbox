@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>ZorinGrey</name>
+    <name>ZorinBlue</name>
     <titleLayout>CIML</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -151,10 +151,10 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>6</top>
-    <bottom>41</bottom>
-    <left>6</left>
-    <right>6</right>
+    <top>5</top>
+    <bottom>5</bottom>
+    <left>40</left>
+    <right>5</right>
   </margins>
   <dock>
     <position>TopLeft</position>
@@ -296,6 +296,7 @@
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
+        <dialog>icons</dialog>
         <bar>no</bar>
         <finalactions>
           <action name="Focus"/>
@@ -306,6 +307,8 @@
     </keybind>
     <keybind key="A-S-Tab">
       <action name="PreviousWindow">
+        <dialog>icons</dialog>
+        <bar>no</bar>
         <finalactions>
           <action name="Focus"/>
           <action name="Raise"/>
@@ -468,6 +471,47 @@
     <keybind key="Pause">
       <action name="Execute">
         <command>bash -c 'playerctl play-pause &amp;&amp; ~/.scripts/notify/short-notify "media-playpause.png" 1000 "Play / Pause" "Media Control"'</command>
+      </action>
+    </keybind>
+    <keybind key="W-P">
+      <action name="Execute">
+        <command>bash -c '~/.config/rofi/scripts/runcommand.sh'</command>
+      </action>
+    </keybind>
+    <keybind key="W-Left">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="W-Right">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="W-Up">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-Down">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>-0</y>
+        <width>100%</width>
+        <height>50%</height>
       </action>
     </keybind>
   </keyboard>
