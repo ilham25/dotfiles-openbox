@@ -17,7 +17,11 @@
 
 ## :triangular_flag_on_post: Changelog
 
-- **Initial Release**
+- New Layout
+- New Wallpaper
+- Change some of color scheme
+- A bit change in gtk theme
+- New rofi config and interface
 
 ## :art: Color Scheme
 
@@ -176,41 +180,53 @@ git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:=~/.oh-m
 
 > :file_folder: **General Config**
 
-- ```bash
-  git clone https://github.com/ilham25/dotfiles-openbox
-  ```
+Clone this repository
 
-- ```bash
-  bash -c 'cd dotfiles-openbox/ && cp -r {.*,*} ~/' &>/dev/null
-  ```
+```bash
+git clone https://github.com/ilham25/dotfiles-openbox
+```
 
-- ```bash
-  rm -rf ~/README.md && rm -rf ~/LICENSE && rm -rf ~/.git # Delete unnecessary files
-  ```
+Copy dotfiles to home directory
+
+```bash
+pushd dotfiles-openbox/ && \
+  bash -c 'cp -v -r {.*,*} ~/' && \
+popd
+```
+
+Remove unnecessary file (README.md, LICENSE, and git directory)
+
+```bash
+rm ~/README.md && rm ~/LICENSE && rm -rf ~/.git
+```
 
 > :nut_and_bolt: **Icons**
 
-- ```bash
-  cd ~/.icons/
-  ```
+```bash
+cd ~/.icons/
 
-- ```bash
-  tar -Jxvf oomox-aesthetic-light.tar.xz && tar -Jxvf oomox-aesthetic-dark.tar.xz
-  ```
+tar -Jxvf oomox-aesthetic-light.tar.xz && tar -Jxvf oomox-aesthetic-dark.tar.xz
 
-- ```bash
-  sudo cp -r {oomox-aesthetic-light,oomox-aesthetic-dark} /usr/share/icons/
-  ```
+sudo cp -r {oomox-aesthetic-light,oomox-aesthetic-dark} /usr/share/icons/
 
-- ```bash
-  rm -r ~/.icons/{oomox-aesthetic-light,oomox-aesthetic-dark,*.tar.xz} # Delete unnecessary files
-  ```
+rm -r ~/.icons/{oomox-aesthetic-light,oomox-aesthetic-dark,*.tar.xz} # Delete unnecessary files
+```
 
 > :bulb: **Refresh font cache**
 
 ```bash
 fc-cache -rv
 ```
+
+> :sunny: **Add user to video group**
+
+This step is required so you can control the brightness using keybind.
+
+```bash
+sudo gpasswd -a $USER video
+```
+
+Please logout and login again so the effect will occur.
 
 Congratulation! You have installed **aether dotfiles** :clap::clap:, next step is you can learn **[the keybinds](#black_square_button-keybinds)** that i use in this theme. For the first time using it maybe you need some practice, but as time go on, you will get used of it and doesn't have trouble again!:v:
 
