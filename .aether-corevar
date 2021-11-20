@@ -34,12 +34,6 @@ NOTIFIER="$HOME/.scripts/notify/notify-send.sh"
 ETHERNETINT=$(ls /sys/class/net | grep ^e) # this will capture enpX or ethX
 WIRELESSINT=$(ls /sys/class/net | grep wl) # this will capture wlpX or wloX
 
-# ********************************************************* #
-#                     Screen resolution                     #
-# After changing resolution value, please switch your theme #
-# ********************************************************* #
-RESOLUTION="1366x768" # Available options : 1366x768 and 1920x1080
-
 # ****************** #
 # Power Menu Command #
 # ****************** #

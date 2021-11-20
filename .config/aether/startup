@@ -68,9 +68,6 @@ aetherDark() {
     fi
 }
 
-# Load rofi theme based on resolution
-~/.config/aether/scripts/change-resolution $RESOLUTION &
-
 # Load Theme
 "$THEME" &
 

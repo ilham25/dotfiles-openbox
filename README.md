@@ -259,23 +259,6 @@ Congratulation! You have installed **aether dotfiles** :clap::clap:, next step i
 
 ## :gear: User Configuration
 
-**:desktop_computer: Screen Resolution**
-This dotfiles only support **1366x768** and **1920x1080** screen resolution.
-
-> Open configuration file
-
-```bash
-nano ~/.aether-corevar
-```
-
-Change the value to your own screen resolution
-
-```cfg
-...
-41 RESOLUTION="1366x768" # Change this value
-...
-```
-
 > Save and change your theme to apply effect
 
 **:fireworks: Power Menu Command**
@@ -291,10 +274,10 @@ Change the configuration below
 
 ```cfg
 ...
-46 POWEROFF="poweroff" # systemd default
-47 REBOOT="reboot" # systemd default
-48 LOCK="dm-tool lock"
-49 SLEEP="suspend" # systemd default
+40 POWEROFF="poweroff" # systemd default
+41 REBOOT="reboot" # systemd default
+42 LOCK="dm-tool lock"
+43 SLEEP="suspend" # systemd default
 ...
 ```
 
