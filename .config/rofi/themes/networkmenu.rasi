@@ -7,10 +7,10 @@
 window {
   width: 275px;
   height: 400px;
-  anchor: south west;
-  location: south west;
-  x-offset: 6px;
-  y-offset: -41px;
+  anchor: north west;
+  location: north west;
+  x-offset: 40px;
+  y-offset: 5px;
   transparency: 0.5;
   border-radius: 6px;
 }
@@ -25,7 +25,26 @@ heading {
 
 mainbox {
   background-color: @bg;
-  children: [heading,listview];
+  children: [heading,inputbar,listview];
+}
+
+inputbar {
+  padding: 0px 20px 20px 20px;
+  children: [prompt,entry];
+}
+
+prompt {
+  background-color: @bg-semilight;
+  padding: 10px 10px;
+  border-radius: 5px 0px 0px 5px;
+  color: @fg;
+}
+
+entry {
+  background-color: @bg-semilight;
+  padding: 10px 5px;
+  color: @fg;
+  border-radius: 0px 5px 5px 0px;
 }
 
 listview {
