@@ -129,7 +129,7 @@ iconview text selection:focus,
 iconview text selection,
 textview text selection:focus,
 textview text selection {
-  background-color: transparent;
+  background-color: rgba(51, 174, 255, 0.3);
 }
 
 textview border {
@@ -179,7 +179,7 @@ label.separator:backdrop {
 }
 
 label selection {
-  background-color: transparent;
+  background-color: rgba(51, 174, 255, 0.3);
 }
 
 label:disabled {
@@ -252,7 +252,7 @@ assistant .sidebar label {
 }
 
 assistant .sidebar label.highlight {
-  background-color: #2b2f35;
+  background-color: #33aeff;
 }
 
 .app-notification,
@@ -411,7 +411,7 @@ entry:backdrop:disabled {
 
 spinbutton:not(.vertical) selection,
 entry selection {
-  background-color: transparent;
+  background-color: rgba(51, 174, 255, 0.3);
 }
 
 spinbutton.error:not(.vertical),
@@ -6440,7 +6440,7 @@ base background color of selections */
 @define-color theme_selected_bg_color #ecf2f2;
 /*
 text/foreground color of selections */
-@define-color theme_selected_fg_color #15191f;
+@define-color theme_selected_fg_color #33aeff;
 /*
 base background color of insensitive widgets */
 @define-color insensitive_bg_color #15191f;
