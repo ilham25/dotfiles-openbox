@@ -3,15 +3,17 @@
 # Inspirated from owl4ce dotfiles #
 # ******************************* #
 
-# ******************************** #
-# DON'T EDIT OR MOVE THIS VARIABLE #
-# ******************************** #
+# ************************************ #
+# DON'T EDIT THIS VARIABLE BY YOURSELF #
+# ************************************ #
 THEME="aetherDark"
 WALLPAPER="DEFAULT"
 SSFRAME="#21252B"
-PANELPOSITION="BOT"
-WALLPAPER_LIGHT="~/.wallpaper/aether-light.png"
-WALLPAPER_DARK="~/.wallpaper/aether-dark.png"
+WALLPAPER_LIGHT="$HOME/.wallpaper/aether-light.png"
+WALLPAPER_DARK="$HOME/.wallpaper/aether-dark.png"
+WALLPAPER_LIGHT_MIN="$HOME/.wallpaper/aether-light.png"
+WALLPAPER_DARK_MIN="$HOME/.wallpaper/aether-dark.png"
+THEME_MODE="MINIMALISM"
 
 ICON_LIGHT_DIR=".icons/aether/light"
 ICON_DARK_DIR=".icons/aether/dark"
@@ -37,7 +39,15 @@ WIRELESSINT=$(ls /sys/class/net | grep wl) # this will capture wlpX or wloX
 # ****************** #
 # Power Menu Command #
 # ****************** #
-POWEROFF="poweroff" # systemd default
-REBOOT="reboot" # systemd default
+POWEROFF="poweroff"
+REBOOT="reboot"
 LOCK="dm-tool lock"
-SLEEP="suspend" # systemd default
+SLEEP="suspend"
+
+# ********** #
+# WM Margins #
+# ********** #
+
+# Order : top right bottom left
+COMFY_MARGINS=(5 5 5 40)
+MINIMALISM_MARGINS=(30 2 2 2)

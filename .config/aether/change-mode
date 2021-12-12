@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+case "$1" in
+    "comfy")
+    sed -i 's/THEME_MODE=.*/THEME_MODE="COMFY"/g' .aether-corevar
+    ;;
+    "minimalism")
+    sed -i 's/THEME_MODE=.*/THEME_MODE="MINIMALISM"/g' .aether-corevar
+    ;;
+    *)
+    sed -i 's/THEME_MODE=.*/THEME_MODE="COMFY"/g' .aether-corevar
+    ;;
+esac
+
+~/.config/aether/kill-ui &> /dev/null
+~/.config/aether/startup &> /dev/null

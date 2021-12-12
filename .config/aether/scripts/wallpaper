@@ -6,13 +6,27 @@ source $HOME/.aether-corevar
 if [[ "$1" == "change" ]]; then
     urxvt -e ~/.config/aether/scripts/change-wallpaper
 else
-    if [[ $WALLPAPER == "DEFAULT" ]]; then
-        if [[ $THEME == "aetherLight" ]]; then
-            feh --bg-fill ~/.wallpaper/aether-light.png
-        elif [[ $THEME == "aetherDark" ]]; then
-            feh --bg-fill ~/.wallpaper/aether-dark.png
-        fi
-    else
+    case "$WALLPAPER" in
+        "DEFAULT")
+        case "$THEME_MODE" in
+            "MINIMALISM")
+            if [[ $THEME == "aetherLight" ]]; then
+                feh --bg-fill "$WALLPAPER_LIGHT_MIN"
+            elif [[ $THEME == "aetherDark" ]]; then
+                feh --bg-fill "$WALLPAPER_DARK_MIN"
+            fi
+            ;;
+            *)
+            if [[ $THEME == "aetherLight" ]]; then
+                feh --bg-fill "$WALLPAPER_LIGHT"
+            elif [[ $THEME == "aetherDark" ]]; then
+                feh --bg-fill "$WALLPAPER_DARK"
+            fi
+            ;;
+        esac
+        ;;
+        *)
         feh --bg-fill $WALLPAPER
-    fi
+        ;;
+    esac
 fi

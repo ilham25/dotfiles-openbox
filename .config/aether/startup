@@ -3,21 +3,36 @@
 # Load Global Variable
 source $HOME/.aether-corevar
 
+marginsMode() {
+    # Change openbox margins
+    if [[ $THEME_MODE == "COMFY" ]]; then
+        sed -i "s_<top>.*</top>_<top>${COMFY_MARGINS[0]}</top>_g" ~/.config/openbox/rc.xml &>/dev/null
+        sed -i "s_<bottom>.*</bottom>_<bottom>${COMFY_MARGINS[2]}</bottom>_g" ~/.config/openbox/rc.xml &>/dev/null
+        sed -i "s_<left>.*</left>_<left>${COMFY_MARGINS[3]}</left>_g" ~/.config/openbox/rc.xml &>/dev/null
+        sed -i "s_<right>.*</right>_<right>${COMFY_MARGINS[1]}</right>_g" ~/.config/openbox/rc.xml &>/dev/null
+    elif [[ $THEME_MODE == "MINIMALISM" ]]; then
+        sed -i "s_<top>.*</top>_<top>${MINIMALISM_MARGINS[0]}</top>_g" ~/.config/openbox/rc.xml &>/dev/null
+        sed -i "s_<bottom>.*</bottom>_<bottom>${MINIMALISM_MARGINS[2]}</bottom>_g" ~/.config/openbox/rc.xml &>/dev/null
+        sed -i "s_<left>.*</left>_<left>${MINIMALISM_MARGINS[3]}</left>_g" ~/.config/openbox/rc.xml &>/dev/null
+        sed -i "s_<right>.*</right>_<right>${MINIMALISM_MARGINS[1]}</right>_g" ~/.config/openbox/rc.xml &>/dev/null
+    fi  
+}
+
 aetherLight() {
     # Dunst
     dunst -config ~/.config/dunst/dunstrc-left &
     # GTK, rofi, color theme
     ~/.config/aether/theme/aether-light/aether-light-theme &
     # Panel
-    if [[ $PANELPOSITION == "TOP" ]]; then
+    if [[ $THEME_MODE == "MINIMALISM" ]]; then
         tint2 -c ~/.config/tint2/aether-i3-light.tint2rc &
-    elif [[ $PANELPOSITION == "BOT" ]]; then
+    elif [[ $THEME_MODE == "COMFY" ]]; then
         tint2 -c ~/.config/tint2/aether-i3-light-bot.tint2rc &
     fi
     # Terminal Color Scheme
     xrdb ~/.config/aether/theme/aether-light/.Xresources &
     # Screenshot frame color
-    sed -i '11s_SSFRAME=.*_SSFRAME="#F9F9F9"_' ~/.aether-corevar &
+    sed -i 's_SSFRAME=.*_SSFRAME="#F9F9F9"_' ~/.aether-corevar &
     # Notify
     $NOTIFIER -r 13 -i "$ICONDIR/theme.png" -t 2000 -u low "Light Mode" "Change Theme" &
     # Live Reload GTK Theme
@@ -30,7 +45,10 @@ aetherLight() {
         # Change openbox menu icon based on theme
         sed -i "s|$HOME\/$ICON_DARK_DIR|$HOME\/$ICON_LIGHT_DIR|g" ~/.config/openbox/menu.xml &>/dev/null
         sed -i "s|iruha|$USER|g" ~/.config/openbox/menu.xml &>/dev/null
-
+        
+        # Margins handler
+        marginsMode
+        
         # Reconfigure Openbox
         openbox --reconfigure 
     fi
@@ -41,15 +59,15 @@ aetherDark() {
     # GTK, rofi, color theme
     ~/.config/aether/theme/aether-dark/aether-dark-theme &
     # Panel
-    if [[ $PANELPOSITION == "TOP" ]]; then
+    if [[ $THEME_MODE == "MINIMALISM" ]]; then
         tint2 -c ~/.config/tint2/aether-i3-dark.tint2rc &
-    elif [[ $PANELPOSITION == "BOT" ]]; then
+    elif [[ $THEME_MODE == "COMFY" ]]; then
         tint2 -c ~/.config/tint2/aether-i3-dark-bot.tint2rc &
     fi
     # Terminal Color Scheme
     xrdb ~/.config/aether/theme/aether-dark/.Xresources &
     # Screenshot frame color
-    sed -i '11s_SSFRAME=.*_SSFRAME="#21252B"_' ~/.aether-corevar &
+    sed -i 's_SSFRAME=.*_SSFRAME="#21252B"_g' ~/.aether-corevar &
     # Notify
     $NOTIFIER -r 13 -i "$ICONDIR/theme.png" -t 2000 -u low "Dark Mode" "Change Theme" &
     # Live Reload GTK Theme
@@ -57,11 +75,14 @@ aetherDark() {
 
     if [[ $DESKTOP_SESSION == "openbox" ]]; then
         # Change openbox theme
-        sed -i 's/ZorinBlue/ZorinGrey/g' ~/.config/openbox/rc.xml &> /dev/null
+        sed -i 's/ZorinBlue/ZorinGrey/g' ~/.config/openbox/rc.xml &>/dev/null
 
         # Change openbox menu icon based on theme
         sed -i "s|$HOME\/$ICON_LIGHT_DIR|$HOME\/$ICON_DARK_DIR|g" ~/.config/openbox/menu.xml &>/dev/null
         sed -i "s|iruha|$USER|g" ~/.config/openbox/menu.xml &>/dev/null
+
+        # Margins handler
+        marginsMode
 
         # Reconfigure Openbox
         openbox --reconfigure

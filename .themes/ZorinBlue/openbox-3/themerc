@@ -108,11 +108,11 @@ window.active.button.iconify.toggled.pressed.image.color:     #9984EF
 # max button
 window.active.button.max.unpressed.image.color:   #33aeff
 window.inactive.button.max.unpressed.image.color:   #ffd6e2
-window.active.button.max.hover.image.color:       #DD9C24
+window.active.button.max.hover.image.color:       #6d96f6
 window.active.button.max.pressed.image.color:     #33aeff
 window.active.button.max.disabled.image.color:    #33aeff
 window.active.button.max.toggled.unpressed.image.color:   #33aeff
-window.active.button.max.toggled.hover.image.color:       #DD9C24
+window.active.button.max.toggled.hover.image.color:       #6d96f6
 window.active.button.max.toggled.pressed.image.color:     #33aeff
 
 !! OSD
