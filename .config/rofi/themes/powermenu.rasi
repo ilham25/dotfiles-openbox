@@ -24,7 +24,7 @@ listview {
 element-text {
     background-color: @bg-semilight;
     horizontal-align: 0.5;
-    padding: 20px 10px;
+    padding: 20px 10px 23px 10px;
     font: @icon-font;
     border-radius: 10px;
     color: @fg-unhover;

@@ -5,51 +5,43 @@
   font: "Rubik Regular 9";
 }
 window {
-  width: 275px;
-  height: 400px;
-  anchor: north west;
-  location: north west;
+  width: 550px;
+  height: 395px;
   x-offset: 40px;
   y-offset: 5px;
   transparency: 0.5;
   border-radius: 6px;
 }
 
-heading {
-    orientation: horizontal;
-    background-image: @network-header;
-    expand: false; 
-    padding: 35px;
-    background-color: transparent;
-}
-
 mainbox {
   background-color: @bg;
-  children: [heading,inputbar,listview];
+  children: [inputbar,listview];
 }
 
 inputbar {
-  padding: 0px 20px 20px 20px;
+  padding: 30px 200px 30px 30px;
   children: [prompt,entry];
+  background-image: @network-header;
 }
 
 prompt {
-  background-color: @bg-semilight;
-  padding: 10px 10px;
+  background-color: @bg-light;
+  padding: 5px 10px;
   border-radius: 5px 0px 0px 5px;
   color: @fg;
 }
 
 entry {
-  background-color: @bg-semilight;
-  padding: 10px 5px;
+  background-color: @bg-light;
+  padding: 5px 5px;
   color: @fg;
   border-radius: 0px 5px 5px 0px;
 }
 
 listview {
+  columns: 2;
   spacing: 10px;
-  padding: 0px 20px 20px 20px;
+  padding: 20px;
   background-color: transparent;
 }
 
