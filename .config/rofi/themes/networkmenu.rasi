@@ -1,0 +1,67 @@
+@import "shared/settings.rasi"
+
+* {
+  background-color: @bg;
+  font: "Rubik Regular 9";
+}
+window {
+  width: 550px;
+  height: 395px;
+  x-offset: 40px;
+  y-offset: 5px;
+  transparency: 0.5;
+  border-radius: 6px;
+}
+
+mainbox {
+  background-color: @bg;
+  children: [inputbar,listview];
+}
+
+inputbar {
+  padding: 30px 200px 30px 30px;
+  children: [prompt,entry];
+  background-image: @network-header;
+}
+
+prompt {
+  background-color: @bg-light;
+  padding: 5px 10px;
+  border-radius: 5px 0px 0px 5px;
+  color: @fg;
+}
+
+entry {
+  background-color: @bg-light;
+  padding: 5px 5px;
+  color: @fg;
+  border-radius: 0px 5px 5px 0px;
+}
+
+listview {
+  columns: 2;
+  spacing: 10px;
+  padding: 20px;
+  background-color: transparent;
+}
+
+element {
+  background-color: @bg-semilight;
+  padding: 10px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  children: [element-text];
+}
+
+
+element selected {
+  background-color: @bg-light;
+  border: 0px solid 0px solid 1px solid 0px solid;
+  border-color: @wifi-accent;
+}
+
+element-text {
+  color: @fg;
+  background-color: transparent;
+  cursor: inherit;
+}
