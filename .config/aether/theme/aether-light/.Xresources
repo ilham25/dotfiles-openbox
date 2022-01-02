@@ -12,8 +12,8 @@ URxvt.scrollstyle:                plain
 URxvt.urgentOnBell:               false
 URxvt.depth:                      32
 URxvt.iso14755:                   false
-URxvt.iconFile:                   /home/iruha/.icons/gladient/term.png
-URxvt.letterSpace: -1
+URxvt.iconFile:                   /home/iruha/.icons/aether/light/small/menu-terminal.png
+! URxvt.letterSpace: -1
 
 ! URXVT EXTENSIONS
 URxvt.perl-ext-common:            default,clipboard,keyboard-select,url-select,tabbedex
@@ -56,7 +56,7 @@ URxvt.urlButton:                  1
 !COLOR SCHEME
 ! special
 *.foreground:   #61656b
-*.background:   [98]#ECF2F2
+*.background:   #ECF2F2
 *.cursorColor:  #61656b
 
 ! black

@@ -2,13 +2,13 @@
 
 case "$1" in
     1)
-    sed -i '9s_THEME=.*_THEME="aetherLight"_' ~/.aether-corevar
+    sed -i 's_THEME=.*_THEME="aetherLight"_' ~/.aether-corevar
     ;;
     2)
-    sed -i '9s_THEME=.*_THEME="aetherDark"_' ~/.aether-corevar
+    sed -i 's_THEME=.*_THEME="aetherDark"_' ~/.aether-corevar
     ;;
     *)
-    sed -i '9s_THEME=.*_THEME="aetherLight"_' ~/.aether-corevar
+    sed -i 's_THEME=.*_THEME="aetherLight"_' ~/.aether-corevar
     ;;
 esac
 

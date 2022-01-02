@@ -12,8 +12,8 @@ URxvt.scrollstyle:                plain
 URxvt.urgentOnBell:               false
 URxvt.depth:                      32
 URxvt.iso14755:                   false
-URxvt.iconFile:                   /home/iruha/.icons/aether/dark/terminal.png
-URxvt.letterSpace: -1
+URxvt.iconFile:                   /home/iruha/.icons/aether/dark/small/terminal-menu.png
+! URxvt.letterSpace: -1
 
 ! URXVT EXTENSIONS
 URxvt.perl-ext-common:            default,clipboard,keyboard-select,url-select,tabbedex
@@ -56,7 +56,7 @@ URxvt.urlButton:                  1
 !COLOR SCHEME
 ! special
 *.foreground:   #9da5b4
-*.background:   [98]#15191f
+*.background:   #15191f
 *.cursorColor:  #9da5b4
 
 ! black

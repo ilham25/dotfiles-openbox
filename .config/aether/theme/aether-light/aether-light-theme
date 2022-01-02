@@ -10,5 +10,4 @@ sed -i '8s_gtk-icon-theme-name=.*_gtk-icon-theme-name=oomox-aesthetic-light_' ~/
 sed -i '4s\icon_theme=.*\icon_theme=oomox-aesthetic-light\' ~/.config/qt5ct/qt5ct.conf
 
 # Rofi
-sed -i '5s_colorschemes/.*.rasi_colorschemes/fullscreen.rasi_' ~/.config/rofi/themes/shared/settings.rasi
-sed -i '5s_colorschemes/.*.rasi_colorschemes/sidebar.rasi_' ~/.config/rofi/themes/sidebar/colors.rasi
+sed -i '1s_colorschemes/.*.rasi_colorschemes/color-light.rasi_' ~/.config/rofi/themes/shared/settings.rasi
