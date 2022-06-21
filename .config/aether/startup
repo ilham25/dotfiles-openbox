@@ -3,6 +3,8 @@
 # Load Global Variable
 source $HOME/.aether-corevar
 
+LOWERCASE_SESSION=$(echo "$DESKTOP_SESSION" | awk '{print tolower($0)}')
+
 marginsMode() {
     # Change openbox margins
     if [[ $THEME_MODE == "COMFY" ]]; then
@@ -38,7 +40,7 @@ aetherLight() {
     # Live Reload GTK Theme
     timeout 0.1s xsettingsd -c ~/.config/aether/theme/aether-light/.xsettingsd &
 
-    if [[ $DESKTOP_SESSION == "openbox" ]]; then
+    if [[ $LOWERCASE_SESSION == "openbox" ]]; then
         # Change openbox theme
         sed -i 's/ZorinGrey/ZorinBlue/g' ~/.config/openbox/rc.xml &> /dev/null
 
@@ -73,7 +75,7 @@ aetherDark() {
     # Live Reload GTK Theme
     timeout 0.1s xsettingsd -c ~/.config/aether/theme/aether-dark/.xsettingsd &
 
-    if [[ $DESKTOP_SESSION == "openbox" ]]; then
+    if [[ $LOWERCASE_SESSION == "openbox" ]]; then
         # Change openbox theme
         sed -i 's/ZorinBlue/ZorinGrey/g' ~/.config/openbox/rc.xml &>/dev/null
 
