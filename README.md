@@ -17,11 +17,11 @@
 
 ## :triangular_flag_on_post: Changelog
 
-- New Layout
 - New Wallpaper
-- Change some of color scheme
-- A bit change in gtk theme
+- Minor panel changes (gradient buttons)
+- Add more gradient
 - New rofi config and interface
+- Sidebar-mode for network and applications menu
 
 ## :art: Color Scheme
 
