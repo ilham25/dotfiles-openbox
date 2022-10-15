@@ -1,6 +1,4 @@
-@import "shared/settings.rasi"
-
-* {
+@import "shared/settings.rasi" * {
     icon-font: "feather 18";
     background-color: @bg;
 }
@@ -8,6 +6,8 @@
 window {
     width: 460px;
     border-radius: 8px;
+    location: south;
+    y-offset: -10%;
 }
 
 mainbox {
@@ -24,7 +24,7 @@ listview {
 element-text {
     background-color: @bg-semilight;
     horizontal-align: 0.5;
-    padding: 20px 10px 23px 10px;
+    padding: @el-text-padding;
     font: @icon-font;
     border-radius: 10px;
     color: @fg-unhover;

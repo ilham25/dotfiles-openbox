@@ -1,0 +1,26 @@
+@import "shared/settings.rasi" * {
+    background-color: @bg;
+    font: "Material 18";
+}
+
+window {
+    width: 512px;
+    height: 100%;
+    location: east;
+    border-radius: 6px 0px 0px 6px;
+}
+
+button-paste {
+    expand: false;
+    content: "My Clickable Message";
+    vertical-align: 0.5;
+    action: "kb-primary-paste";
+}
+
+mode-switcher {
+    children: [button-paste];
+}
+
+mainbox {
+    children: [mode-switcher];
+}

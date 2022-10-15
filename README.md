@@ -183,7 +183,7 @@ git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:=~/.oh-m
 Clone this repository
 
 ```bash
-git clone https://github.com/ilham25/dotfiles-openbox
+git clone --depth 1 https://github.com/ilham25/dotfiles-openbox
 ```
 
 Copy dotfiles to home directory

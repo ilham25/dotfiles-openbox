@@ -12,4 +12,5 @@
   fg-unhover: #33AEFF;
   network-header: url("assets/light/network-header.png", height);
   launcher-header: url("assets/light/launcher-header.png", height);
+  el-text-padding: 20px 10px 16px 10px;
 }

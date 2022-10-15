@@ -1,6 +1,4 @@
-@import "shared/settings.rasi"
-
-* {
+@import "shared/settings.rasi" * {
     icon-font: "feather 24";
     background-color: @bg;
 }
@@ -11,8 +9,8 @@ window {
 }
 
 mainbox {
-    children: [inputbar,listview];
-    padding: 5px 0px;
+    children: [inputbar, listview];
+    padding: 0px 0px;
 }
 
 inputbar {
@@ -37,7 +35,7 @@ listview {
 element-text {
     background-color: @bg-semilight;
     horizontal-align: 0.5;
-    padding: 20px 10px 15px 10px;
+    padding: @el-text-padding;
     font: @icon-font;
     border-radius: 10px;
     color: @fg-unhover;

@@ -7,9 +7,10 @@
   wifi-accent: #FF598B;
   blue: #33AEFF;
   green: #1FE0A6;
-  bg-hover: #33AEFF;
+  bg-hover: #7392FA;
   fg-hover: #15191f;
   fg-unhover: #33AEFF;
   network-header: url("assets/dark/network-header.png", height);
   launcher-header: url("assets/dark/launcher-header.png", height);
+  el-text-padding: 20px 10px 16px 10px;
 }

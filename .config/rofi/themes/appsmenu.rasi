@@ -1,73 +1,70 @@
-@import "shared/settings.rasi"
-
-* {
-  background-color: @bg;
-  font: "Rubik Regular 9";
+@import "shared/settings.rasi" * {
+    background-color: @bg;
+    font: "Rubik Regular 11";
 }
 window {
-  width: 700px;
-  height: 520px;
-  border-radius: 6px;
+    width: 400px;
+    height: 100%;
+    location: east;
 }
 
 mainbox {
-  background-color: @bg;
+    background-color: @bg;
 }
 
 inputbar {
-  padding: 0px 0px 0px 0px;
-  background-color: transparent;
-  children: [entry];
-  padding: 50px 0px;
-  background-image: @launcher-header;
+    background-color: transparent;
+    children: [entry];
+    padding: 20px 0px;
+    background-image: @launcher-header;
 }
 
 entry {
-  background-color: @bg-light;
-  padding: 5px;
-  margin: 0px 200px;
-  horizontal-align: 0.5;
-  color: @fg;
-  border-radius: 5px;
-  placeholder: "Search";
-  placeholder-color: #b3b7bd;
+    background-color: @bg;
+    padding: 10px 20px;
+    margin: 100px 20px 0px 20px;
+    horizontal-align: 0;
+    color: @fg;
+    border-radius: 7px;
+    placeholder: "Search";
+    placeholder-color: #b3b7bd;
 }
 
 listview {
-  columns: 4;
-  spacing: 5px;
-  fixed-columns: true;
-  background-color: transparent;
-  padding: 3%;
+    columns: 1;
+    spacing: 5px;
+    fixed-columns: true;
+    background-color: transparent;
+    padding: 20px;
 }
 
 element {
-  orientation: vertical;
-  background-color: transparent;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+    orientation: horizontal;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
 }
 
 element selected {
-  background-color: @bg-hover;
+    background-color: @bg-hover;
 }
 
 element-icon {
-  background-color: transparent;
-  size: 48;
-  horizontal-align: 0.5;
-  cursor: inherit;
+    background-color: transparent;
+    size: 32;
+    horizontal-align: 0.5;
+    cursor: inherit;
 }
 element-text {
-  horizontal-align: 0.5;
-  color: @fg;
-  background-color: transparent;
-  padding: 10px 5px;
-  cursor: inherit;
+    horizontal-align: 0;
+    vertical-align: 0.5;
+    color: @fg;
+    background-color: transparent;
+    padding: 0px 5px;
+    cursor: inherit;
 }
 
 element-text selected {
-  color: @fg-hover;
+    color: @fg-hover;
 }
-
