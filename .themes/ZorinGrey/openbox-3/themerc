@@ -9,7 +9,7 @@ padding.width: 5
 menu.overlap: 0
 border.color: #15191f
 window.frameColor: #15191f
-window.*.client.color: #15191f
+window.*.client.color: #33aeff
 *.text.justify: center
 
 !!Fonts
@@ -87,31 +87,31 @@ window.inactive.button.pressed.bg.color: #4f5051
 window.inactive.button.disabled.image.color: #d0d0d0
 
 !! close button
-window.active.button.close.unpressed.image.color:   #33aeff
-window.active.button.close.hover.image.color:       #3f99bf
-window.active.button.close.pressed.image.color:     #33aeff
-window.active.button.close.disabled.image.color:    #33aeff
-window.active.button.close.toggled.unpressed.image.color:   #33aeff
-window.active.button.close.toggled.hover.image.color:       #3f99bf
-window.active.button.close.toggled.pressed.image.color:     #33aeff
+window.active.button.close.unpressed.image.color:   #0ba8ff
+window.active.button.close.hover.image.color:       #0b8fd9
+window.active.button.close.pressed.image.color:     #0ba8ff
+window.active.button.close.disabled.image.color:    #0ba8ff
+window.active.button.close.toggled.unpressed.image.color:   #0ba8ff
+window.active.button.close.toggled.hover.image.color:       #0b8fd9
+window.active.button.close.toggled.pressed.image.color:     #0ba8ff
 
 !! iconify button
-window.active.button.iconify.unpressed.image.color:   #6BC4FF
-window.active.button.iconify.hover.image.color:       #0094F5
-window.active.button.iconify.pressed.image.color:     #6BC4FF
-window.active.button.iconify.disabled.image.color:    #6BC4FF
-window.active.button.iconify.toggled.unpressed.image.color:   #6BC4FF
-window.active.button.iconify.toggled.hover.image.color:       #0094F5
-window.active.button.iconify.toggled.pressed.image.color:     #6BC4FF
+window.active.button.iconify.unpressed.image.color:   #6998ff
+window.active.button.iconify.hover.image.color:       #5a81d9
+window.active.button.iconify.pressed.image.color:     #6998ff
+window.active.button.iconify.disabled.image.color:    #6998ff
+window.active.button.iconify.toggled.unpressed.image.color:   #6998ff
+window.active.button.iconify.toggled.hover.image.color:       #5a81d9
+window.active.button.iconify.toggled.pressed.image.color:     #6998ff
 
 !! max button
-window.active.button.max.unpressed.image.color:   #A3DBFF
-window.active.button.max.hover.image.color:       #0094F5
-window.active.button.max.pressed.image.color:     #A3DBFF
-window.active.button.max.disabled.image.color:    #A3DBFF
-window.active.button.max.toggled.unpressed.image.color:   #A3DBFF
-window.active.button.max.toggled.hover.image.color:       #0094F5
-window.active.button.max.toggled.pressed.image.color:     #A3DBFF
+window.active.button.max.unpressed.image.color:   #c687ff
+window.active.button.max.hover.image.color:       #a873d9
+window.active.button.max.pressed.image.color:     #c687ff
+window.active.button.max.disabled.image.color:    #c687ff
+window.active.button.max.toggled.unpressed.image.color:   #c687ff
+window.active.button.max.toggled.hover.image.color:       #a873d9
+window.active.button.max.toggled.pressed.image.color:     #c687ff
 
 !! OSD
 osd.label.text.color: #ecf2f2
