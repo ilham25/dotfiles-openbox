@@ -16,9 +16,9 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED="✱ %{$fg[grey]%}"
 num_dirs=1 # Use 0 for full path
 user="%{$fg_bold[green]%} %{$reset_color%}%F{green}%n"
 
-left_icon="%{$fg[blue]%}"
-dir_icon="%{$reset_color%}%{$fg_bold[red]%}%{$reset_color%}"
-right_icon="%{$fg[blue]%}"
+left_icon="%{$fg[blue]%}"
+dir_icon="%{$reset_color%}%{$fg_bold[green]%}%{$reset_color%}"
+right_icon="%{$fg[blue]%}"
 
 truncated_path="$left_icon$dir_icon$right_icon%{$reset_color%} %F{yellow}%$num_dirs~ "
 background_jobs="%(1j.%F{green}%f.)"
