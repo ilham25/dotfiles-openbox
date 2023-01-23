@@ -14,6 +14,7 @@
 - **Notification :** dunst
 - **App launcher :** rofi (**use v.1.7.0**)
 - **File manager :** thunar
+- **Screen capture:** scrot (**use v.1.6 or below**)
 
 ## :triangular_flag_on_post: Changelog
 
